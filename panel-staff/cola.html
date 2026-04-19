@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cola en vivo — Reserpax Cola</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="app">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="brand-dot"></span>
+        Reserpax Cola
+      </div>
+
+      <div class="nav-section-title">Operativa</div>
+      <a href="cola.html" class="nav-link active">
+        <span class="icon">●</span> Cola en vivo
+      </a>
+      <a href="estadisticas.html" class="nav-link">
+        <span class="icon">▤</span> Estadísticas
+      </a>
+
+      <div class="nav-section-title">Administración</div>
+      <a href="zonas.html" class="nav-link">
+        <span class="icon">◆</span> Zonas
+      </a>
+      <a href="usuarios.html" class="nav-link">
+        <span class="icon">◉</span> Usuarios
+      </a>
+      <a href="configuracion.html" class="nav-link">
+        <span class="icon">⚙</span> Configuración
+      </a>
+
+      <div class="sidebar-footer">
+        <div class="user-chip">
+          <div class="avatar">LC</div>
+          <div class="user-info">
+            <strong>Lucía Castro</strong>
+            <small>El Rincón del Teide</small>
+          </div>
+        </div>
+        <a href="index.html" class="nav-link" style="margin-top: 8px;">
+          <span class="icon">↪</span> Cerrar sesión
+        </a>
+      </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+      <div class="page-header">
+        <div>
+          <h1 class="page-title">Cola en vivo</h1>
+          <p class="page-subtitle">5 personas esperando · Última actualización hace unos segundos</p>
+        </div>
+        <button class="btn btn-primary btn-lg">
+          + Añadir manualmente
+        </button>
+      </div>
+
+      <!-- STATS DEL DÍA -->
+      <div class="stats-grid">
+        <div class="stat">
+          <div class="stat-label">En cola ahora</div>
+          <div class="stat-value">5</div>
+        </div>
+        <div class="stat">
+          <div class="stat-label">Sentados hoy</div>
+          <div class="stat-value">23</div>
+        </div>
+        <div class="stat">
+          <div class="stat-label">Tiempo medio espera</div>
+          <div class="stat-value">18'</div>
+        </div>
+        <div class="stat">
+          <div class="stat-label">No-shows hoy</div>
+          <div class="stat-value">2</div>
+        </div>
+      </div>
+
+      <!-- LISTA DE COLA -->
+      <div class="cola-list">
+
+        <div class="cola-item highlighted">
+          <div class="posicion">1</div>
+          <div class="cola-info">
+            <div class="cola-nombre">
+              María González
+              <span class="badge badge-avisado">
+                <span class="badge-dot"></span> Avisado
+              </span>
+            </div>
+            <div class="cola-meta">
+              <span>👥 4 personas</span>
+              <span>📞 +34 612 345 678</span>
+              <span>🌿 Terraza</span>
+              <span class="time-badge">Esperando 22 min</span>
+            </div>
+            <div class="cola-comment">
+              Una persona con alergia al gluten
+            </div>
+          </div>
+          <div class="cola-actions">
+            <button class="btn btn-primary btn-sm">Sentar</button>
+            <button class="btn btn-sm btn-danger">No-show</button>
+          </div>
+        </div>
+
+        <div class="cola-item">
+          <div class="posicion">2</div>
+          <div class="cola-info">
+            <div class="cola-nombre">
+              Javier Romero
+              <span class="badge badge-esperando">
+                <span class="badge-dot"></span> Esperando
+              </span>
+            </div>
+            <div class="cola-meta">
+              <span>👥 2 personas</span>
+              <span>📞 +34 687 123 456</span>
+              <span>🪑 Interior</span>
+              <span class="time-badge">Esperando 15 min</span>
+            </div>
+          </div>
+          <div class="cola-actions">
+            <button class="btn btn-sm">Avisar</button>
+            <button class="btn btn-sm btn-ghost">⋯</button>
+          </div>
+        </div>
+
+        <div class="cola-item">
+          <div class="posicion">3</div>
+          <div class="cola-info">
+            <div class="cola-nombre">
+              Ana Pérez
+              <span class="badge badge-esperando">
+                <span class="badge-dot"></span> Esperando
+              </span>
+            </div>
+            <div class="cola-meta">
+              <span>👥 6 personas</span>
+              <span>📞 +34 655 987 123</span>
+              <span>· Sin preferencia</span>
+              <span class="time-badge">Esperando 8 min</span>
+            </div>
+            <div class="cola-comment">
+              Celebran un cumpleaños, si es posible mesa apartada
+            </div>
+          </div>
+          <div class="cola-actions">
+            <button class="btn btn-sm">Avisar</button>
+            <button class="btn btn-sm btn-ghost">⋯</button>
+          </div>
+        </div>
+
+        <div class="cola-item">
+          <div class="posicion">4</div>
+          <div class="cola-info">
+            <div class="cola-nombre">
+              Carlos Ruiz
+              <span class="badge badge-esperando">
+                <span class="badge-dot"></span> Esperando
+              </span>
+            </div>
+            <div class="cola-meta">
+              <span>👥 3 personas</span>
+              <span>📞 +34 699 555 222</span>
+              <span>🌿 Terraza</span>
+              <span class="time-badge">Esperando 5 min</span>
+            </div>
+          </div>
+          <div class="cola-actions">
+            <button class="btn btn-sm">Avisar</button>
+            <button class="btn btn-sm btn-ghost">⋯</button>
+          </div>
+        </div>
+
+        <div class="cola-item">
+          <div class="posicion">5</div>
+          <div class="cola-info">
+            <div class="cola-nombre">
+              Lucía Martín
+              <span class="badge badge-esperando">
+                <span class="badge-dot"></span> Esperando
+              </span>
+            </div>
+            <div class="cola-meta">
+              <span>👥 2 personas</span>
+              <span>📞 +34 611 888 444</span>
+              <span>· Sin preferencia</span>
+              <span class="time-badge">Esperando 2 min</span>
+            </div>
+          </div>
+          <div class="cola-actions">
+            <button class="btn btn-sm">Avisar</button>
+            <button class="btn btn-sm btn-ghost">⋯</button>
+          </div>
+        </div>
+
+      </div>
+    </main>
+  </div>
+</body>
+</html>

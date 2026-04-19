@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zonas — Reserpax Cola</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="brand-dot"></span>
+        Reserpax Cola
+      </div>
+      <div class="nav-section-title">Operativa</div>
+      <a href="cola.html" class="nav-link"><span class="icon">●</span> Cola en vivo</a>
+      <a href="estadisticas.html" class="nav-link"><span class="icon">▤</span> Estadísticas</a>
+      <div class="nav-section-title">Administración</div>
+      <a href="zonas.html" class="nav-link active"><span class="icon">◆</span> Zonas</a>
+      <a href="usuarios.html" class="nav-link"><span class="icon">◉</span> Usuarios</a>
+      <a href="configuracion.html" class="nav-link"><span class="icon">⚙</span> Configuración</a>
+      <div class="sidebar-footer">
+        <div class="user-chip">
+          <div class="avatar">LC</div>
+          <div class="user-info">
+            <strong>Lucía Castro</strong>
+            <small>El Rincón del Teide</small>
+          </div>
+        </div>
+        <a href="index.html" class="nav-link" style="margin-top: 8px;"><span class="icon">↪</span> Cerrar sesión</a>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="page-header">
+        <div>
+          <h1 class="page-title">Zonas</h1>
+          <p class="page-subtitle">Áreas del restaurante que el cliente puede preferir al apuntarse</p>
+        </div>
+        <button class="btn btn-primary">+ Nueva zona</button>
+      </div>
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Estado</th>
+              <th>En cola ahora</th>
+              <th style="width: 120px;"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Terraza</strong></td>
+              <td><span class="badge badge-sentado"><span class="badge-dot"></span> Activa</span></td>
+              <td>2 personas</td>
+              <td>
+                <button class="btn btn-sm btn-ghost">Editar</button>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Interior</strong></td>
+              <td><span class="badge badge-sentado"><span class="badge-dot"></span> Activa</span></td>
+              <td>1 persona</td>
+              <td>
+                <button class="btn btn-sm btn-ghost">Editar</button>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Reservado privado</strong></td>
+              <td><span class="badge badge-cancelado"><span class="badge-dot"></span> Inactiva</span></td>
+              <td>—</td>
+              <td>
+                <button class="btn btn-sm btn-ghost">Editar</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

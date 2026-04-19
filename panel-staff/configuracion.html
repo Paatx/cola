@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Configuración — Reserpax Cola</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="brand-dot"></span>
+        Reserpax Cola
+      </div>
+      <div class="nav-section-title">Operativa</div>
+      <a href="cola.html" class="nav-link"><span class="icon">●</span> Cola en vivo</a>
+      <a href="estadisticas.html" class="nav-link"><span class="icon">▤</span> Estadísticas</a>
+      <div class="nav-section-title">Administración</div>
+      <a href="zonas.html" class="nav-link"><span class="icon">◆</span> Zonas</a>
+      <a href="usuarios.html" class="nav-link"><span class="icon">◉</span> Usuarios</a>
+      <a href="configuracion.html" class="nav-link active"><span class="icon">⚙</span> Configuración</a>
+      <div class="sidebar-footer">
+        <div class="user-chip">
+          <div class="avatar">LC</div>
+          <div class="user-info">
+            <strong>Lucía Castro</strong>
+            <small>El Rincón del Teide</small>
+          </div>
+        </div>
+        <a href="index.html" class="nav-link" style="margin-top: 8px;"><span class="icon">↪</span> Cerrar sesión</a>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="page-header">
+        <div>
+          <h1 class="page-title">Configuración</h1>
+          <p class="page-subtitle">Ajustes del restaurante y personalización de mensajes</p>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+
+        <!-- Datos del restaurante -->
+        <div class="card">
+          <div class="card-header"><h2 class="card-title">Datos del restaurante</h2></div>
+          <div class="form-group">
+            <label class="label">Nombre del restaurante</label>
+            <input type="text" class="input" value="El Rincón del Teide">
+          </div>
+          <div class="form-group">
+            <label class="label">Teléfono WhatsApp</label>
+            <input type="text" class="input" value="+34 922 123 456">
+            <p class="hint">El número al que los clientes mandan mensajes al escanear el QR</p>
+          </div>
+          <div class="form-group">
+            <label class="label">Tiempo estimado por mesa (minutos)</label>
+            <input type="number" class="input" value="20">
+            <p class="hint">Se usa para calcular el tiempo estimado de espera</p>
+          </div>
+          <button class="btn btn-primary">Guardar cambios</button>
+        </div>
+
+        <!-- QR -->
+        <div class="card">
+          <div class="card-header"><h2 class="card-title">Código QR</h2></div>
+          <div class="qr-card" style="border: 0; padding: 0;">
+            <div class="qr-placeholder"></div>
+            <div>
+              <p style="font-size: 14px; margin-bottom: 12px;">
+                Imprime este QR y colócalo en la entrada del restaurante. Cuando los clientes lo escaneen se abrirá WhatsApp con un mensaje predefinido.
+              </p>
+              <div class="flex gap-2">
+                <button class="btn btn-primary btn-sm">Descargar PNG</button>
+                <button class="btn btn-sm">Descargar PDF</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mensajes -->
+        <div class="card" style="grid-column: 1 / -1;">
+          <div class="card-header"><h2 class="card-title">Mensajes de WhatsApp</h2></div>
+          <div class="form-group">
+            <label class="label">Mensaje de bienvenida</label>
+            <textarea class="textarea">👋 ¡Hola! Bienvenido/a a El Rincón del Teide. Para apuntarte a la lista de espera, responde con: Nombre, número de personas</textarea>
+          </div>
+          <div class="form-group">
+            <label class="label">Confirmación de alta</label>
+            <textarea class="textarea">✅ ¡Listo, {nombre}! Estás en la lista de espera. Posición: #{posicion}. Tiempo estimado: {tiempo} minutos. Te avisaremos cuando tu mesa esté lista.</textarea>
+            <p class="hint">Variables disponibles: {nombre}, {posicion}, {tiempo}</p>
+          </div>
+          <div class="form-group">
+            <label class="label">Aviso de mesa lista</label>
+            <textarea class="textarea">🎉 {nombre}, ¡tu mesa está lista! Dirígete a recepción en El Rincón del Teide. Tienes 5 minutos para llegar.</textarea>
+          </div>
+          <button class="btn btn-primary">Guardar mensajes</button>
+        </div>
+
+      </div>
+    </main>
+  </div>
+</body>
+</html>

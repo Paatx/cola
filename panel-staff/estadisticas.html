@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estadísticas — Reserpax Cola</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="brand-dot"></span>
+        Reserpax Cola
+      </div>
+      <div class="nav-section-title">Operativa</div>
+      <a href="cola.html" class="nav-link"><span class="icon">●</span> Cola en vivo</a>
+      <a href="estadisticas.html" class="nav-link active"><span class="icon">▤</span> Estadísticas</a>
+      <div class="nav-section-title">Administración</div>
+      <a href="zonas.html" class="nav-link"><span class="icon">◆</span> Zonas</a>
+      <a href="usuarios.html" class="nav-link"><span class="icon">◉</span> Usuarios</a>
+      <a href="configuracion.html" class="nav-link"><span class="icon">⚙</span> Configuración</a>
+      <div class="sidebar-footer">
+        <div class="user-chip">
+          <div class="avatar">LC</div>
+          <div class="user-info">
+            <strong>Lucía Castro</strong>
+            <small>El Rincón del Teide</small>
+          </div>
+        </div>
+        <a href="index.html" class="nav-link" style="margin-top: 8px;"><span class="icon">↪</span> Cerrar sesión</a>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="page-header">
+        <div>
+          <h1 class="page-title">Estadísticas</h1>
+          <p class="page-subtitle">Rendimiento de la gestión de la cola</p>
+        </div>
+        <div class="flex gap-2">
+          <select class="select" style="width: auto;">
+            <option>Hoy</option>
+            <option>Esta semana</option>
+            <option selected>Último mes</option>
+            <option>Rango personalizado</option>
+          </select>
+          <button class="btn">Exportar CSV</button>
+        </div>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat">
+          <div class="stat-label">Total atendidos</div>
+          <div class="stat-value">487</div>
+          <div class="stat-trend">↑ 12% vs mes anterior</div>
+        </div>
+        <div class="stat">
+          <div class="stat-label">Tiempo medio espera</div>
+          <div class="stat-value">17'</div>
+          <div class="stat-trend negative">↑ 2 min vs mes anterior</div>
+        </div>
+        <div class="stat">
+          <div class="stat-label">Tasa de no-show</div>
+          <div class="stat-value">4.2%</div>
+          <div class="stat-trend">↓ 1.1% vs mes anterior</div>
+        </div>
+        <div class="stat">
+          <div class="stat-label">Personas por grupo (media)</div>
+          <div class="stat-value">3.1</div>
+        </div>
+      </div>
+
+      <!-- Gráfica placeholder -->
+      <div class="card" style="margin-bottom: 20px;">
+        <div class="card-header">
+          <h2 class="card-title">Personas atendidas por día</h2>
+          <span class="text-muted text-sm">Últimos 30 días</span>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(30, 1fr); gap: 4px; height: 160px; align-items: end;">
+          <div style="background: var(--accent-soft); border: 1px solid var(--accent); height: 30%; border-radius: 4px 4px 0 0;"></div>
+          <div style="background: var(--accent-soft); border: 1px solid var(--accent); height: 45%; border-radius: 4px 4px 0 0;"></div>
+          <div style="background: var(--accent-soft); border: 1px solid var(--accent); height: 60%; border-radius: 4px 4px 0 0;"></div>
+          <div style="background: var(--accent-soft); border: 1px solid var(--accent); height: 40%; border-radius: 4px 4px 0 0;"></div>
+          <div style="background: var(--accent-soft); border: 1px solid var(--accent); height: 70%; border-radius: 4px 4px 0 0;"></div>
+          <div style="background: var(--accent); border: 1px solid var(--accent); height: 85%; border-radius: 4px 4px 0 0;"></div>
+          <div style="background: var(--accent); border: 1px solid var(--accent); height: 95%; border-radius: 4px 4px 0 0;"></div>
+          <div style="background: var(--accent-soft); border: 1px solid var(--accent); height: 35%; border-radius: 4px 4px 0 0;"></div>
+          <div style="background: var(--accent-soft); border: 1px solid var(--accent); height: 50%; border-radius: 4px 4px 0 0;"></div>
+          <div style="background: var(--accent-soft); border: 1px solid var(--accent); height: 55%; border-radius: 4px 4px 0 0;"></div>
+          <div style="background: var(--accent-soft); border: 1px solid var(--accent); height: 65%; border-radius: 4px 4px 0 0;"></div>
+          <div style="background: var(--accent-soft); border: 1px solid var(--accent); height: 48%; border-radius: 4px 4px 0 0;"></div>
+          <div style="background: var(--accent); border: 1px solid var(--accent); height: 88%; border-radius: 4px 4px 0 0;"></div>
+          <div style="background: var(--accent); border: 1px solid var(--accent); height: 92%; border-radius: 4px 4px 0 0;"></div>
+          <div style="background: var(--accent-soft); border: 1px solid var(--accent); height: 42%; border-radius: 4px 4px 0 0;"></div>
+          <div style="background: var(--accent-soft); border: 1px solid var(--accent); height: 58%; border-radius: 4px 4px 0 0;"></div>
+          <div style="background: var(--accent-soft); border: 1px solid var(--accent); height: 62%; border-radius: 4px 4px 0 0;"></div>
+          <div style="background: var(--accent-soft); border: 1px solid var(--accent); height: 70%; border-radius: 4px 4px 0 0;"></div>
+          <div style="background: var(--accent-soft); border: 1px solid var(--accent); height: 52%; border-radius: 4px 4px 0 0;"></div>
+          <div style="background: var(--accent); border: 1px solid var(--accent); height: 82%; border-radius: 4px 4px 0 0;"></div>
+          <div style="background: var(--accent); border: 1px solid var(--accent); height: 90%; border-radius: 4px 4px 0 0;"></div>
+          <div style="background: var(--accent-soft); border: 1px solid var(--accent); height: 38%; border-radius: 4px 4px 0 0;"></div>
+          <div style="background: var(--accent-soft); border: 1px solid var(--accent); height: 55%; border-radius: 4px 4px 0 0;"></div>
+          <div style="background: var(--accent-soft); border: 1px solid var(--accent); height: 60%; border-radius: 4px 4px 0 0;"></div>
+          <div style="background: var(--accent-soft); border: 1px solid var(--accent); height: 68%; border-radius: 4px 4px 0 0;"></div>
+          <div style="background: var(--accent-soft); border: 1px solid var(--accent); height: 45%; border-radius: 4px 4px 0 0;"></div>
+          <div style="background: var(--accent); border: 1px solid var(--accent); height: 85%; border-radius: 4px 4px 0 0;"></div>
+          <div style="background: var(--accent); border: 1px solid var(--accent); height: 94%; border-radius: 4px 4px 0 0;"></div>
+          <div style="background: var(--accent-soft); border: 1px solid var(--accent); height: 40%; border-radius: 4px 4px 0 0;"></div>
+          <div style="background: var(--accent-soft); border: 1px solid var(--accent); height: 50%; border-radius: 4px 4px 0 0;"></div>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+        <div class="card">
+          <div class="card-header"><h2 class="card-title">Horas punta</h2></div>
+          <table>
+            <tbody>
+              <tr><td>21:00 — 22:00</td><td style="text-align: right; font-family: var(--font-mono);"><strong>28%</strong></td></tr>
+              <tr><td>14:00 — 15:00</td><td style="text-align: right; font-family: var(--font-mono);"><strong>22%</strong></td></tr>
+              <tr><td>22:00 — 23:00</td><td style="text-align: right; font-family: var(--font-mono);"><strong>18%</strong></td></tr>
+              <tr><td>13:00 — 14:00</td><td style="text-align: right; font-family: var(--font-mono);"><strong>14%</strong></td></tr>
+              <tr><td>Otros</td><td style="text-align: right; font-family: var(--font-mono); color: var(--text-muted);">18%</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="card">
+          <div class="card-header"><h2 class="card-title">Zonas más solicitadas</h2></div>
+          <table>
+            <tbody>
+              <tr><td>🌿 Terraza</td><td style="text-align: right; font-family: var(--font-mono);"><strong>58%</strong></td></tr>
+              <tr><td>🪑 Interior</td><td style="text-align: right; font-family: var(--font-mono);"><strong>27%</strong></td></tr>
+              <tr><td>Sin preferencia</td><td style="text-align: right; font-family: var(--font-mono); color: var(--text-muted);">15%</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
