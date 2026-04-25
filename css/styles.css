@@ -324,7 +324,13 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
+  flex: 1;
   flex-wrap: wrap;
+}
+
+.filter-group .filter-btn {
+  flex: 1;
+  min-width: 70px;
 }
 
 .filter-label {
