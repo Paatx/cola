@@ -414,7 +414,57 @@ body {
 }
 .filter-btn:hover { background: var(--surface-2); }
 
-.filter-btn.active {
+/* Colores tipo semáforo suave para cada tamaño de grupo */
+.filter-btn[data-size="1-2"] {
+  background: #ecfdf5;
+  border-color: #6ee7b7;
+  color: #047857;
+}
+.filter-btn[data-size="1-2"]:hover { background: #d1fae5; }
+.filter-btn[data-size="1-2"].active {
+  background: #10b981;
+  border-color: #10b981;
+  color: white;
+}
+
+.filter-btn[data-size="3-4"] {
+  background: #eff6ff;
+  border-color: #93c5fd;
+  color: #1d4ed8;
+}
+.filter-btn[data-size="3-4"]:hover { background: #dbeafe; }
+.filter-btn[data-size="3-4"].active {
+  background: #3b82f6;
+  border-color: #3b82f6;
+  color: white;
+}
+
+.filter-btn[data-size="5-6"] {
+  background: #fff7ed;
+  border-color: #fdba74;
+  color: #c2410c;
+}
+.filter-btn[data-size="5-6"]:hover { background: #ffedd5; }
+.filter-btn[data-size="5-6"].active {
+  background: #f97316;
+  border-color: #f97316;
+  color: white;
+}
+
+.filter-btn[data-size="7+"] {
+  background: #fef2f2;
+  border-color: #fca5a5;
+  color: #b91c1c;
+}
+.filter-btn[data-size="7+"]:hover { background: #fee2e2;  }
+.filter-btn[data-size="7+"].active {
+  background: #e35d5d;
+  border-color: #e35d5d;
+  color: white;
+}
+
+/* Botón "Todas" se mantiene neutral */
+.filter-btn.active:not([data-size]) {
   background: var(--accent);
   border-color: var(--accent);
   color: white;
