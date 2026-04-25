@@ -306,121 +306,53 @@ body {
   50% { opacity: .4; }
 }
 
-
-/* ============ FILTROS ============ */
-.filters {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-  padding: 18px 22px;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  margin-bottom: 16px;
-  flex-wrap: wrap;
-}
-
-.filter-group {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.filter-label {
-  font-size: 14px;
-  color: var(--text);
-  font-weight: 600;
-  margin-right: 6px;
-}
-
-.filter-btn {
-  padding: 10px 18px;
-  border: 1px solid var(--border-strong);
-  background: var(--surface);
-  color: var(--text);
-  border-radius: var(--radius-sm);
-  font-family: inherit;
-  font-size: 14px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all .15s;
-  min-width: 60px;
-}
-.filter-btn:hover { background: var(--surface-2); }
-
 .filter-btn[data-size="1-2"] {
-  background: #ecfdf5;
-  border-color: #6ee7b7;
-  color: #047857;
+  background: #d1fae5;
+  border-color: #34d399;
+  color: #065f46;
 }
-.filter-btn[data-size="1-2"]:hover { background: #d1fae5; }
+.filter-btn[data-size="1-2"]:hover { background: #a7f3d0; }
 .filter-btn[data-size="1-2"].active {
-  background: #10b981;
-  border-color: #10b981;
+  background: #059669;
+  border-color: #059669;
   color: white;
 }
 
 .filter-btn[data-size="3-4"] {
-  background: #eff6ff;
-  border-color: #93c5fd;
-  color: #1d4ed8;
+  background: #dbeafe;
+  border-color: #60a5fa;
+  color: #1e40af;
 }
-.filter-btn[data-size="3-4"]:hover { background: #dbeafe; }
+.filter-btn[data-size="3-4"]:hover { background: #bfdbfe; }
 .filter-btn[data-size="3-4"].active {
-  background: #3b82f6;
-  border-color: #3b82f6;
+  background: #2563eb;
+  border-color: #2563eb;
   color: white;
 }
 
 .filter-btn[data-size="5-6"] {
-  background: #fff7ed;
-  border-color: #fdba74;
-  color: #c2410c;
+  background: #ffedd5;
+  border-color: #fb923c;
+  color: #9a3412;
 }
-.filter-btn[data-size="5-6"]:hover { background: #ffedd5; }
+.filter-btn[data-size="5-6"]:hover { background: #fed7aa; }
 .filter-btn[data-size="5-6"].active {
-  background: #f97316;
-  border-color: #f97316;
+  background: #ea580c;
+  border-color: #ea580c;
   color: white;
 }
 
 .filter-btn[data-size="7+"] {
-  background: #fef2f2;
-  border-color: #fca5a5;
-  color: #b91c1c;
+  background: #fee2e2;
+  border-color: #f87171;
+  color: #991b1b;
 }
-.filter-btn[data-size="7+"]:hover { background: #fee2e2;  }
+.filter-btn[data-size="7+"]:hover { background: #fecaca; }
 .filter-btn[data-size="7+"].active {
-  background: #e35d5d;
-  border-color: #e35d5d;
+  background: #dc2626;
+  border-color: #dc2626;
   color: white;
 }
-
-.filter-btn.active:not([data-size]) {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: white;
-}
-
-.filter-search {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-}
-
-.filter-input {
-  width: 140px;
-  padding: 10px 14px;
-  font-size: 14px;
-}
-
-.filter-search .btn {
-  padding: 10px 18px;
-  font-size: 14px;
-}
-
 /* ============ COLA ============ */
 .cola-list {
   display: flex;
