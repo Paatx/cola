@@ -253,9 +253,10 @@
     filterInput.addEventListener('keypress', e => {
       if (e.key === 'Enter') filterSearchBtn.click();
     });
+
     // ── Vista por rol ──
 // Cambia 'admin' por 'staff' para simular vista de empleado
-const rol = 'admin';
+const rol = 'staff';
 
 if (rol === 'staff') {
   document.getElementById('sidebar').style.display = 'none';
