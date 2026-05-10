@@ -9,7 +9,7 @@
 <body>
   <div class="app">
     <!-- SIDEBAR -->
-    <aside class="sidebar">
+   <aside class="sidebar" id="sidebar">
       <div class="brand">
         <span class="brand-dot"></span>
        Cola
@@ -253,6 +253,14 @@
     filterInput.addEventListener('keypress', e => {
       if (e.key === 'Enter') filterSearchBtn.click();
     });
+    // ── Vista por rol ──
+// Cambia 'admin' por 'staff' para simular vista de empleado
+const rol = 'admin';
+
+if (rol === 'staff') {
+  document.getElementById('sidebar').style.display = 'none';
+  document.querySelector('.main').style.cssText += '; grid-column: 1 / -1; max-width: 100%;';
+}
   </script>
 </body>
 </html>
